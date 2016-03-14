@@ -1,0 +1,80 @@
+ h1 {
+
+    color: black;
+    text-decoration: underline;
+    background-image: url(http://www.noupe.com/wp-content/uploads/2009/10/insurrectionx.jpg);
+    text-align: center;
+} 
+
+body {background-image: url(http://wallpapercraze.com/images/wallpapers/08_1600x1200-617698.jpeg);
+
+text-align: center;
+
+}
+
+
+
+div {
+    border: 1px solid black;
+    border-style: ridge;
+    width: 150px;
+    height: 50px;
+
+}
+
+#red    {
+    padding: 10px 11px; margin: 10px 3px 10px 5px; background-color: rgb(226,220,222);
+    color: black;
+}
+#orange {
+    padding: 10px 11px; margin: 10px 3px 10px 100px; background-color: rgb(200,220,222);
+    color: black;
+}  
+#yellow {
+    padding: 10px 11px; margin: 10px 3px 10px 200px; background-color: rgb(190,220,222);
+    color: black;
+}
+#green {
+    padding: 10px 11px;margin: 10px 3px 10px 300px; background-color: rgb(180,220,222);
+    color: black;
+}
+#blue {
+    padding: 10px 11px; margin: 10px 3px 10px 400px; background-color: rgb(170,220,222);
+    color: black;
+}
+#violet {
+    padding: 10px 11px; margin: 10px 3px 10px 500px; background-color: rgb(160,220,222);
+    color: black;
+}
+
+
+
+#one  {
+    padding: 10px 11px; margin: 10px 3px 10px 600px; background-color: rgb(140,220,222);
+    color: black;
+}
+#two{
+    padding: 10px 11px; margin: 10px 3px 10px 500px; background-color: rgb(160,220,222);
+    color: black;
+}  
+#three{
+    padding: 10px 11px; margin: 10px 3px 10px 400px; background-color: rgb(170,220,222);
+    color: black;
+}
+#four {
+    padding: 10px 11px;margin: 10px 3px 10px 300px; background-color: rgb(180,220,222);
+    color: black;
+}
+#five {
+    padding: 10px 11px; margin: 10px 3px 10px 200px; background-color: rgb(190,220,222);
+    color: black;
+}
+#six {
+    padding: 10px 11px; margin: 10px 3px 10px 100px; background-color: rgb(200,220,222);
+    color: black;
+}
+#seven {padding: 10px 11px; margin: 10px 3px 10px 5px; background-color: rgb(226,220,222);
+    color: black;
+}
+
+
