@@ -1,0 +1,32 @@
+
+
+ h1 {
+
+    color: rgb(128, 44, 62);
+    text-decoration: underline;
+
+} 
+
+
+ 
+body {
+    font-family: helvetica, Times, serif;
+    background-image: url(/img/new_year_background.png);
+    /*background-color: rgb(135, 163, 48); */
+
+}
+
+body {
+    font-size: 20px;
+}
+
+ol {list-style: upper-alpha;}
+
+ul {list-style: square;}
+
+table, th, td {
+   border: 1px solid black;
+   margin-bottom:10px;
+}
+
+a:hover {font-family:Arial; color:black; text-decoration:none}
