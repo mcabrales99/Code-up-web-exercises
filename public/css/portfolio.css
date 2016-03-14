@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+ background-image: url(/img/black_wood.jpg);
+ background-size: 1440px 800px;
+ background-repeat: no-repeat;
+ display: compact;
+ font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+ color: white;
+ padding-top: 80px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
