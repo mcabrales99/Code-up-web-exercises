@@ -1,0 +1,49 @@
+h1 {
+
+    color: rgb(97, 48, 150);
+    text-decoration: underline; font-weight: bold;
+
+} 
+
+.box {
+    border: 1px solid black;
+
+    width: 150px;
+    height: 50px;
+    padding:10px 11px;
+    color: white;
+
+}
+
+
+#red    {
+    
+    margin: 10px 3px 10px 5px;
+    background-color: rgb(216,66,49);
+    
+}
+#orange {
+     margin: 10px 3px 10px 30px;
+      background-color: rgb(234,174,51);
+    
+}  
+#yellow {
+     margin: 10px 3px 10px 60px;
+      background-color: rgb(252,247,51);
+    
+}
+#green {
+    margin: 10px 3px 10px 90px; 
+    background-color: rgb(87,140,5);
+    
+}
+#blue {
+     margin: 10px 3px 10px 120px;
+      background-color: rgb(35,74,251);
+    
+}
+#violet {
+     margin: 10px 3px 10px 150px;
+      background-color: violet;
+    
+}
