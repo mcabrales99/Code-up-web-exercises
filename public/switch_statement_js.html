@@ -1,0 +1,61 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <title>switch statement</title>
+</head>
+<body>
+
+
+
+<script type = "text/javascript">
+"use strict";
+// ignore these lines for now
+// just know that the variable 'color' will end up with a random value from the colors array
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var color = colors[Math.floor(Math.random()*colors.length)];
+
+var favorite = "red";
+
+switch (color) {
+    
+    case "red":
+        console.log("red like a fire engine");
+
+        break;
+    case "orange":
+        console.log("orange like a sunset");
+
+        break;
+    case "yellow":
+        console.log("green like a frog");
+
+        break;
+    case "blue":
+        console.log("blue like the ocean");
+
+        break;
+    
+    default:
+
+        console.log("I do not know anything by that color");
+
+}
+        console.log((favorite == color) ? "My favorite color is indigo" : "violet is not my favorite color");
+
+
+
+
+
+
+ // todo: create a case statement that will handle every color except indigo and violet
+    // todo: when a color is encountered log a message that tells the color, and an object of that color
+    //       example: Blue is the color of the sky.
+
+    // todo: create a default case that will catch indigo and violet
+    // todo: for the default case, log: I do not know anything by that color.
+
+
+</script>
+
+</body>
+</html>
