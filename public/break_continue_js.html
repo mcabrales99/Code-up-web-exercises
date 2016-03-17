@@ -1,0 +1,42 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <title>For loop</title>
+</head>
+<body>
+<script type = "text/javascript">
+"use strict";
+
+do{
+    var random = Math.floor((Math.random()*50)+1)
+
+}
+    while (random % 2 == 0);
+    
+    console.log('random odd number to skip: ' + random);
+
+    for (var i = 1; i <= 50; i += 2) {
+
+    if (random == i) {
+
+        continue;
+    }
+
+        console.log('Here is an odd number: ' + i);
+
+
+   }
+
+
+      
+
+    
+ 
+
+
+
+
+
+</script>
+</body>
+</html>
