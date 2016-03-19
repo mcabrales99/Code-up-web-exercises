@@ -1,0 +1,89 @@
+<DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <title>Arrays are array</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+   (function() {
+    "use strict";
+
+    var names = [
+    "Mauro",
+    "marcus",
+    "alan",
+    "lorena",
+    "bobby",
+    ];
+
+    //var yetAnotherName = names.splice(3,1);
+
+    //console.log(yetAnotherName);
+
+    //yetAnotherName.forEach(function(newName){
+      
+      //names.push(newName);
+
+
+   
+
+    //names.splice(3, 0, "alex", " Daniel");
+
+
+
+    //names.reverse();
+    var nameString = names.join("|");
+
+    console.log("Hello " + names.join("|"));
+
+    console.log(nameString);
+
+    var splitNames = nameString.split("|");
+
+    console.log(splitNames);
+
+
+
+
+
+    //names.push("natalie");
+
+    //console.log(names);
+
+    //var oldname = names.pop();
+
+    //console.log(names);
+
+    //console.log(oldname);
+
+    //names.unshift(oldname);
+
+    //console.log(names);
+
+    //var anotherName = names.shift();
+
+    //console.log(names);
+
+    //console.log(anotherName);
+
+
+    var marcusIndex = names.indexOf("marcus");
+
+    console.log("marcus was at" + marcusIndex);
+
+
+
+
+
+
+
+
+
+})();
+
+</script>
+
+</body>
+</html>
