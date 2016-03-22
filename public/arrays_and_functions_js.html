@@ -1,0 +1,40 @@
+<DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <title>arrays_and_functions.js
+</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+   (function() {
+    "use strict";
+ 
+    var movie = ['Fight Club','The Godfather ','King Kong','Dr Strangelove', 'The Wizard of Ozz', 'Traffic', 'The Martian', 'Room' , 'Mad Max', 'Hollywood' ]
+
+    movie.sort();
+
+
+    var fightIndex = movie.indexOf("Fight Club");
+
+    console.log("My favorite movie is " + fightIndex);
+
+
+    var removed = movie.splice(2);
+
+    console.log(removed);
+
+
+
+
+    console.log(movie);
+
+
+
+})();
+
+</script>
+
+</body>
+</html>
