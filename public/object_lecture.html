@@ -1,0 +1,62 @@
+<DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <title>object lecture.js
+</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+   (function() {
+    "use strict";
+
+
+  var car = {};
+
+  //use dot notation to create 'make' property
+  car.make = "Toyota";
+
+
+  //use array notation to assign a 'model' property
+
+  car['model'] = 'Camry';
+
+
+    car.color = 'gray';
+    car.year = '2016';
+    car.type = 'Sedan';
+
+
+
+
+    console.log(car);
+
+    console.log(car.make);
+    console.log(car['model']);
+
+    car.logMakeModel = function () {
+
+        console.log('Car make/ model is ' + this.make + " " +this.model);
+
+}
+        car.logMakeModel();
+
+
+    
+
+
+ //create a honk method on the car object
+//car.honk = function () {
+   // alert('Honk! Honk!');
+
+//car.honk();
+
+
+
+})();
+
+</script>
+
+</body>
+</html>
