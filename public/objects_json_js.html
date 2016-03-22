@@ -1,0 +1,77 @@
+<DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <title>object lecture.js
+</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+   (function() {
+    "use strict";
+
+
+    var books = [
+
+    {
+        "title": "Do androids dream of electric sheep?",
+            "author":
+                {
+                    "firstName": "Phillip",
+                "lastName": "Dick"
+                }
+    },
+    {
+        "title": "Something wicked this way comes",
+            "author":
+                {
+                    "firstName": "Ray",
+                 "lastName": "Bradbury"
+                }
+    },
+    {
+        "title": "The hitchhikers guide to the galaxy",
+            "author":
+                {
+                    "firstName": "Douglas",
+                 "lastName": "Adams"
+                }
+    },
+    {
+        "title": "Pride and Prejudice and Zombies",
+            "author":
+                {
+                    "firstName": "Seth",
+                 "lastName": "Grahame"
+                }
+    },
+    {
+        "title": "I Was Told There'd Be Cake",
+            "author":
+                {
+                    "firstName": "Sloane",
+                 "lastName": "Crosley"
+                }
+    }
+
+]
+
+books.forEach(function(book,index) {
+
+    console.log("Book Number " + (index +1));
+    console.log(book.title);
+    console.log(book.author.firstName);
+    console.log(book.author.lastName);
+    console.log("_______________________");
+
+
+})
+
+
+})();
+
+</script>
+
+</body>
+</html>
