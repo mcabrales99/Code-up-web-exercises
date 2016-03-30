@@ -1,0 +1,153 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>google maps</title>
+</head>
+    
+        <style type="text/css">
+        #map-canvas {
+            width: 770px;
+            height: 481px;
+        }
+        </style>
+
+
+<body>
+
+ <div id="map-canvas"></div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp5qyTeAbpot8yxd6JR0jVBODWgw8JgA4"></script>
+  
+
+
+<script type="text/javascript">
+   
+
+    (function() {
+        "use strict";
+
+
+
+        var mapOptions = {
+        // Set the zoom level
+        zoom: 18,
+
+        // This sets the center of the map at our location
+        center: {
+            lat:  29.426791,
+            lng: -98.489602
+        }
+        };
+
+// Render the map
+var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+
+   
+var restaurants = [
+
+
+        {
+            "name": "Burger Boy",
+            "address": "2323 N Saint Marys St San Antonio, TX 78212",
+            "comment": "Best Burger Ever"
+
+        },
+        {
+            "name": "Pizzaritas",
+            "address": "245 E Commerce St #100, San Antonio, TX 78205",
+            "comment": "Best Pizza Ever"
+
+        },
+        {
+
+            "name": "Lulus",
+            "address": "918 N. Main  San Antonio, TX",
+            "comment": "Best chicken fried steak Ever"
+        }
+
+    ]
+
+restaurants.forEach(function(restaurant,index) {
+
+
+
+
+
+    //var address = "2323 N Saint Marys St San Antonio, TX 78212"
+
+    var geocoder = new google.maps.Geocoder();
+
+
+    geocoder.geocode({ "address": restaurant.address }, function(results, status) {
+
+        if (status == google.maps.GeocoderStatus.OK) {
+
+
+             map.setCenter(results[0].geometry.location);
+
+        } else {
+
+            alert ("Geocoding is not successful - STATUS:  " + status);
+
+        }
+
+        var burgerBoy = { lat: 29.447540, lng: -98.487454 };
+
+
+        var marker = new google.maps.Marker({
+                        position: results[0].geometry.location,
+                        map: map,
+                        title: restaurant.name,
+                        animation: google.maps.Animation.DROP
+                        });
+
+
+        var contentString = '<div id="content">'+
+                    '<div id="siteNotice">'+
+                    '</div>'+
+                    '<h1 id="firstHeading" class="firstHeading">Burger Boy</h1>'+
+                    '<div id="bodyContent">'+
+                    '<p>Burger boy is a popular eatery that has premium burgers at a satisfying '+
+                    'price. The Working man seems to be the largest burger combo under 10 dollars. '+
+                    'I live 4 blocks away and should really walk there'+
+                    '</p>'+
+                    '<p><a href="https://www.yelp.com/biz/burger-boy-san-antonio">Visit on Yelp!</a>'+
+                    '</p>'+
+                    '</div>'+
+                    '</div>';
+
+
+
+        var infowindow = new google.maps.InfoWindow({
+
+                        content: restaurant.comment
+                        });
+
+
+        marker.addListener('click', function() {
+                infowindow.open(map, marker);
+                });
+
+
+            
+
+
+    })
+})
+ })();
+    
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
