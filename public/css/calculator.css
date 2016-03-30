@@ -1,0 +1,50 @@
+
+.calculator {
+
+    background-color: rgb(135,186,126);
+    max-width: 30%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom:  10px;
+    border-style: solid; 
+}   
+
+
+h1 {
+    padding-left: 230px
+
+    
+}
+
+.box1 {
+
+    width: 90px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.box2 {
+
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.box3 {
+
+    width: 90px;
+    height: 40px;
+    font-size: 15px;
+}
+
+button {
+
+    height: 50px;
+    width: 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+  
