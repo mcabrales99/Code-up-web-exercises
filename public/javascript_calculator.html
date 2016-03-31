@@ -1,0 +1,209 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Javascript Calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/calculator.css">
+
+
+</head>
+<body>
+
+    <h1>Awesome_ish Calculator</h1>
+
+<div class="calculator">
+
+<div align="center">
+
+
+    <input  class = "box1" type="text" id="box1"  readonly>
+
+    <input  class = "box2" type="text" id="box2"  readonly>
+
+    <input  class = "box3" type="text" id="box3"  readonly>
+
+</div>
+
+<br>
+
+<div align= "center", class="button">
+
+    <button id="btn1">1</button>
+    <button id="btn2">2</button>
+    <button id="btn3">3</button>
+    <button id="btnPlus">+</button>
+</div>
+<div align= "center", class="button">
+    <button id="btn4">4</button>
+    <button id="btn5">5</button>
+    <button id="btn6">6</button>
+    <button id="btnMinus">-</button>
+</div>
+
+<div align= "center", class = "button">
+    <button id="btn7">7</button>
+    <button id="btn8">8</button>
+    <button id="btn9">9</button>
+    <button id="btnMult">*</button>
+</div>
+
+<div align= "center", class = "button">
+    <button id="btnClear">C</button>
+    <button id="btn0">0</button>
+    <button id="btnEqual">=</button>
+    <button id="btnSlash">/</button>
+
+</div>
+
+<script>
+    
+(function()  {
+    "use strict"
+
+    //These are all the event listeners that will be called upon the click of the
+    //butons they are assigned. 
+
+var button1 = document.getElementById("btn1");
+button1.addEventListener("click",firstBoxOutPut,false);
+
+var button2 = document.getElementById("btn2");
+button2.addEventListener("click",firstBoxOutPut,false);
+
+var button3 = document.getElementById("btn3");
+button3.addEventListener("click",firstBoxOutPut,false);
+
+var button4 = document.getElementById("btn4");
+button4.addEventListener("click",firstBoxOutPut,false);
+
+var button5 = document.getElementById("btn5");
+button5.addEventListener("click",firstBoxOutPut,false);
+
+var button6 = document.getElementById("btn6");
+button6.addEventListener("click",firstBoxOutPut,false);
+
+var button7 = document.getElementById("btn7");
+button7.addEventListener("click",firstBoxOutPut,false);
+
+var button8 = document.getElementById("btn8");
+button8.addEventListener("click",firstBoxOutPut,false);
+
+var button9 = document.getElementById("btn9");
+button9.addEventListener("click",firstBoxOutPut,false);
+
+var button0 = document.getElementById("btn0");
+button0.addEventListener("click",firstBoxOutPut,false);
+
+
+var buttonPlus = document.getElementById("btnPlus");
+buttonPlus.addEventListener("click",secondBoxOutput,false);
+
+var buttonMinus = document.getElementById("btnMinus");
+buttonMinus.addEventListener("click",secondBoxOutput,false);
+
+var buttonMult = document.getElementById("btnMult");
+buttonMult.addEventListener("click",secondBoxOutput,false);
+
+var buttonEqual = document.getElementById("btnEqual");  
+buttonEqual.addEventListener("click",calcualationResult,false);
+
+var buttonClear = document.getElementById("btnClear");  
+buttonClear.addEventListener("click",clearAllBoxes,false);
+
+var buttonSlash = document.getElementById("btnSlash");
+buttonSlash.addEventListener("click",secondBoxOutput,false);
+
+
+
+
+        // This function is for inserting numbers into box1. It also holds an if statement
+        // that establishes if box2 has no value, the numbers will enter box1. Else, box3
+        // will then allow numbers to be entered there.  
+    function firstBoxOutPut(event) {
+
+        var box1 = document.getElementById("box1")
+        var previousValue = box1.value 
+
+            if (!box2.value) {
+
+            box1.value = previousValue + this.innerHTML;
+
+            } else {
+
+            box3.value += this.innerHTML; 
+
+            }
+
+    }
+
+        //This function allows for numbers to be inserted into box2 
+    function secondBoxOutput(event)  {
+
+        var box2 = document.getElementById("box2")
+        box2.value = this.innerHTML;
+        
+    }
+
+        //This function defines the three variables used and holds the switch event for
+        //the operator calculation. 
+     function calcualationResult(event)     {
+            
+        var box1 = document.getElementById("box1")
+        var box2 = document.getElementById("box2")
+        var box3 = document.getElementById("box3")
+
+
+        var operator = box2.value
+    
+            
+        switch (operator) {
+
+            case "+":
+
+                box1.value = parseInt(box1.value) + parseInt(box3.value)
+
+                break;
+
+            case "-":
+
+                box1.value = parseInt(box1.value) - parseInt(box3.value)
+                
+                break;
+
+            case "*": 
+
+                box1.value = parseInt(box1.value) * parseInt(box3.value)
+                
+                break;
+            
+            case "/":
+
+                box1.value = parseInt(box1.value) / parseInt(box3.value)
+
+                break;
+
+                console.log(box1);
+
+        }        
+
+            //This clears box3 after the calculation is performed. This allows the user
+            //keep the last value and continue calculations
+            box3.value = "";
+
+    }
+        //This function will enable the clear button to clear all boxes.
+        function clearAllBoxes(event)  {
+
+            box1.value = "";
+            box2.value = "";
+            box3.value = "";
+
+        }
+
+})();
+
+</script>
+</body>
+</div>
+</html>
