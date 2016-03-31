@@ -1,0 +1,36 @@
+
+h1  {
+
+    font-size: 5em;
+    padding-left: 400px;
+
+}
+
+h2  {
+
+    padding-left: 400px;
+
+}
+img {
+
+    margin-left: 400px;
+
+}
+
+body    {
+
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+ 
+}
+
+ @-webkit-keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+    to {background-color: blue;}
+    
+
