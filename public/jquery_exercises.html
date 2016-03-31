@@ -5,13 +5,72 @@
 </head>
 <body>
 
+
+<h1 id="header" class="top">HI there</h1>
+
+<p id="paragraph" class="codeup">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+<ul id="unorderedList" class="codeup">
+    <li>The first list item.</li>
+    <li>The second list item.</li>
+    <li>The third list item.</li>
+
+</ul>
+
+
+<div id="div" class="codeup">This is a div</div>
+
+
+
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript">
 
-$(document).ready(function() {
-    alert( 'The DOM has finished loading!' );
+"use strict";
 
-    
+// //$(document).ready(function() {
+//     alert( 'The DOM has finished loading!' );
+
+// $(document).ready(function() {
+//     var contents = $('#header').html();
+//     alert(contents);
+// });
+
+// $(document).ready(function() {
+//     $('.codeup').css('border', '1px dashed red');
+
+$(document).ready(function() {
+    //$('.codeup').css('border', '1px dashed red');
+
+// $('li').css('font-size', '20px');
+// $('.codeup').css('background-color', '#FF0');
+
+ $('#header').click(function() {
+     $(this).css('background-color', '#FF0');
+
+     });
+
+
+$('#paragraph').dblclick(function() {
+                $(this).css('font-size', '18px');
+         
+$('#codeup').hover(
+                function() {
+                    $(this).css('background-color', '#FF0');
+                },
+                function() {
+                    $(this).css('background-color', '#FFF');
+                }
+            );
+           
+})
+
 });
 </script>
 </body>
