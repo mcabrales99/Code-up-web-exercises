@@ -22,13 +22,13 @@ body    {
     width: 100px;
     height: 100px;
     background-color: red;
-    animation-name: example;
+    animation-name: colspin;
     animation-duration: 4s;
     animation-iteration-count: infinite;
  
 }
 
- @-webkit-keyframes example {
+ @-webkit-keyframes colspin {
     from {background-color: red;}
     to {background-color: yellow;}
     to {background-color: blue;}
