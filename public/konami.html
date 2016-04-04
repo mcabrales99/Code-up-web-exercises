@@ -7,14 +7,10 @@
     <h1>Konami Code</h1>
 
     <h2>Play FREE NOW!!!!</h2>
-    
+
 
     <img src="/img/Contra_-_Logo_-_01.png" alt="contra"
            style="width:304px;height:228px;">
-
-
-
-
 
 
     <link rel="stylesheet" type="text/css" href="konami.css">
@@ -30,8 +26,6 @@
         $(document).keyup(function(event){
             console.log(event.keyCode);
 
-            // var input = event.keyCode
-
                 if (event.keyCode == konaKeys[konamiIndex])   {
                     console.log("that's right");
                     konamiIndex++;
@@ -41,14 +35,12 @@
                         //alert('you have added 30 lives!');
                         window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&feature=youtu.be";
 
-                        $(document).keyup(window.location);
+                        //$(document).keyup(window.location);
 
                     };
                 } else {
                     console.log("Wrong!");
                     konamiIndex = 0;
-
-
                 }
                 
         });
