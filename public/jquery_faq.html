@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Page FAQ</title>
+    <style>
+        .centered {
+            text-align: center;
+        }
+        .invisible {
+            display: none;
+        }
+    </style>
+    <script src="/js/jquery-1.12.2.min.js"></script>
+    <script>
+        "use strict";
+
+
+        $(document).ready(function() {
+            
+            $('dd').hide();
+            $('#showAnswer').click(function(event) {
+                
+                $('dd').slideToggle();
+           
+            });
+
+
+            $('ul').each(function(index)   {
+ 
+                $(this).children().first().css('font-weight', 'bold');
+            
+        });
+
+       
+            $('li').click(function(event)    {
+
+                $(this).parent().slideToggle();
+            });
+
+     
+
+        });
+    </script>
+</head>
+<body>
+    <h1>Top 10 FAQ: National Parks</h1>
+    
+            <dl>
+                <dt>What is a National Park?</dt>
+                    
+                    <dd>National Parks are substantial tracts of land, sometimes remote, with wide open spaces large enough to provide the public with opportunities for outdoor recreation. National Parks are designated because of their landscape quaility, wildlife and their values as a recreational resource.</dd>
+
+                <dt>What are the National Park purposes?</dt>
+
+                    <dd>The statutory purposes of National Parks are:
+
+                        To conserve and enhance the natural beauty, wildlife and cultural heritage of the National Parks
+                        To promote opportunities for the public understanding and enjoyment of the special qualities of the Parks
+                        In those cases where conflict exists between the two purposes and reconciliation proves impossible, the first purpose should take precedence. This is known as the Sandford Principle.
+
+                        The Broads was designated under a special Act of Parliament and is a member of the National Park family. Its three statutory purposes are conserving and enhancing the natural beauty of the Broads, promoting the enjoyment of the Broads by the public and protecting the interests of navigation.
+
+                    </dd>
+
+                <dt>Why is it important to protect National Parks?</dt>
+
+                        <dd>National Parks are important and special areas covering 10% of the land area in England and Wales.  They protect vital landscapes and wildlife habitats, are important places where people live and work, and provide a focus for recreation and tourism for millions of visitors each year.  
+
+                        There are 90 million visitors to National Parks and surrounding areas each year, spending more than £4bn, and 90% of people say National Parks are important to them.  These visitors experience the well documented physical and mental health benefits of being connected with nature.
+
+                        Over 23% of land in National Parks in England is designated as Sites of Special Scientific Interest, and over 333,000 hectares is recognised and protected as being of international conservation importance.
+
+                        The Parks play an important role in mitigating the effects of climate change, and are essential carbon stores.  Peat soils in National Parks in England hold 119 megatones of carbon, that's the equivalent to England's entire CO2 emissions for one year.
+                        </dd>
+
+
+        </dl>
+
+<h1>Parks List</h1>
+    <h3>National Parks</h3>
+    <ul id="hide">
+        <li>Arches</li>
+        <li>Badlands</li>
+        <li>Carlsbad Caverns</li>
+        <li>Denali</li>
+        <li>Everglades</li>
+    </ul>
+    <h3>State Parks of Texas</h3>
+    <ul id="hide">
+        <li>Abilene</li>
+        <li>Big Bend</li>
+        <li>Choke Canyon</li>
+        <li>Davis Mountains</li>
+        <li>Enchanted Rock</li>
+    </ul>
+    </h3>
+    
+    
+    <a href="#" id="showAnswer">Click to toggle the visibility of answers.</a>
+   
+</body>
+</html>
